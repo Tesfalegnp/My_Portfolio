@@ -1,0 +1,69 @@
+@media (min-width: 768px) {
+    /* PC Size */
+.home img{
+    width: 80%;
+}.home h1{
+    background: black;
+    font-size: 40px;
+    color: white;
+    width: 80%;
+    height: 100px;
+}.head{
+    background-color:lightslategray;
+    width: 80%;
+    height: 70px;
+    text-align: center;
+    position: center;
+}.head a{
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    position: center;
+    color: black;
+}.head a:hover{
+    background-color: black;
+    color: white;
+}.head img{
+    width: 70px;
+    height: 60px;
+} #resume{
+    width: 130px;
+    height: 40px;
+}}
+/* ////////////////////////////////////////////////////// */
+@media (max-width: 768px) {
+    /* Mobile Size */
+    #resume{
+    width: 70px;
+    height: 30px;
+}.head img{
+    width: 50px;
+    height: 40px;
+}.head a{
+    font-size: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    position: center;
+    color: black;
+}.head a:hover{
+    background-color: black;
+    color: white;
+}.home img{
+    width: 80%;
+}.home h1{
+    background: black;
+    font-size: 20px;
+    color: white;
+    width: 80%;
+    height: 50px;
+}.head{
+    width: 50%;
+}
+body{
+    width: 100%;
+}
+}

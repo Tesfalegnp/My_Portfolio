@@ -1,56 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    .home img{
-        width: 80%;
-    }.home h1{
-        background: black;
-        color: white;
-    }.head{
-        background-color:lightslategray;
-        width: 80%;
-        height: 70px;
-        text-align: center;
-        position: center;
-    }.head a{
-        font-size: 20px;
-        padding: 20px;
-        margin: 10px;
-        text-align: center;
-        text-decoration: none;
-        position: center;
-        color: black;
-    }.head a:hover{
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }.container img{
+        top:0%;
+        width: 40%;
+        height: 30%;
+    } .jumbotron{
+        background: url('./image/bg3.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+    } .container-x{
         background-color: black;
         color: white;
-    }.head img{
-        width: 70px;
-        height: 60px;
+    } .container-x a{
+        text-decoration: none;
+        float: left;
     }
-</style>
-<body><center> 
-    <div > 
-        <table class="head"><tr><td><a href="">Home</a>
-        <a href="">About me</a> 
-        <a href="">Servce</a> 
-        <a href="">Contact me</a></td>
-        <td><img src="./image/me.jpg" alt="My photo"></td>
-        </tr></table>         
-    </div>
-    <div class="home">
-        <img src="./image/bg2.jpeg" alt="Photo">
-        <h1>Hello There! My Name is Tesfalegn</h1>
-    </div>
-    <div>
-        <h2>Welcome</h2>
-        <h1>My Portfolio</h1>
-    </div>
+  </style>
+</head>
+<body>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <img src="./image/my.jpg" alt="">
+    <h1>My Portfolio</h1>    
+    <pre> <b> Name Tesfalegn Petros, <br>
+        I was dedicated fourth-year Software Engineering student at Mizan Tepi University, <br>
+        I am a passionate web developer with a strong background in creating dynamic and user-friendly web applications. <br>
+        My goal is to leverage my technical skills and creativity to build engaging and scalable web solutions that meet <br>
+        the needs of clients and end-users. With a keen eye for design and a knack for problem-solving, I strive to deliver <br>
+         high-quality code and exceptional user experiences.</b></pre>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    <center>
+  <h3>Some of my Work</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>I’m currently gaining practical experience by developing a web application for the Tepi Town Bus Station.
+        <a href="https://github.com/Tesfalegnp/Bus-Station.git">To get Source Code</a>
+      </p>
+      <img src="./image/work.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Some text..</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Some text..</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br>
 </center>
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Some text..</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Some text..</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Some text..</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center container-x">
+    <a href="#">Home</a> <br>
+    <a href="#">About</a> <br>
+    <a href="#">Contact</a> <br>
+    <a href="#">Gallery</a>
+    <center><p>&copy; CopyRight Are Reserved</p></center>
+  
+</footer>
+
 </body>
 </html>
