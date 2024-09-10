@@ -32,7 +32,8 @@
     } .container-x a{
         text-decoration: none;
         float: left;
-    }
+    }.navbar{position: fixed;
+    width: 100%;}
   </style>
 </head>
 <body>
@@ -49,10 +50,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.html">CV</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -61,11 +63,11 @@
   </div>
 </nav>
 
-<div class="jumbotron">
+<div class="jumbotron" id="home">
   <div class="container text-center">
     <img src="./image/my.jpg" alt="">
     <h1>My Portfolio</h1>    
-    <pre> <b> Name Tesfalegn Petros, <br>
+    <pre id="about"> <b> Name Tesfalegn Petros, <br>
         I was dedicated fourth-year Software Engineering student at Mizan Tepi University, <br>
         I am a passionate web developer with a strong background in creating dynamic and user-friendly web applications. <br>
         My goal is to leverage my technical skills and creativity to build engaging and scalable web solutions that meet <br>
@@ -128,8 +130,10 @@
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
-</div><br><br>
-<div class="container-fluid bg-3 text-center">
+</div> <br> 
+
+<br>
+<div class="container-fluid bg-3 text-center" id="contact">
     <h1>To Contact Me</h1>
     Phone:- +251916225842 <br>
     Email:- peterhope935@gmail.com <br> 
@@ -147,6 +151,18 @@
         &copy; <script>document.write(new Date().getFullYear())</script> All Rights Are Reserved </p></center>
   
 </footer>
+<script>
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
+      anchorLinks.forEach(link => {
+        link.addEventListener('click', event => {
+          event.preventDefault();
+          const target   
+      = document.querySelector(link.getAttribute('href'));
+          target.scrollIntoView({ behavior: 'smooth'   
+      });
+        });
+      });
+</script>
 </body>
 </html>
