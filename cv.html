@@ -12,6 +12,31 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
+    }.mm img{
+      width:20%; 
+      height: 30%;
+    }
+    .Personal td{
+      border: 1px solid;
+      padding: 4px;
+      font-weight: bold;
+    }.skill h4{
+      font-weight: bold;
+    }.hobb h5{
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      /* Mobile Size */
+      .mobile img{
+        width: 50%;
+        height: 50%;
+      }
+      .mm{
+        width: 80%;
+      } .mm img{
+      width:100%; 
+      height: 100%;
+    }
     }
   </style>
     <title>CV</title>
@@ -24,25 +49,26 @@
           <div class="col-sm-3">
                     <td>
                         <!-- <img src="./image/me.jpg" class="img-responsive" style="width:100%" alt="My_Photo"> -->
-                        <img src="./image/me.jpg" class="img-responsive" style="width:20%; height: 30%;" alt="Image">
+                        <img src="./image/me.jpg" class="img-responsive" alt="Image">
                     </td> <td style="color:white"><h1>Tesfalegn Petros</h1>
                          <h4>Software Engineer</h4></td>            
           </div>
           </tr>
             </table>
             <div class="col-sm-3"> 
-                <h1>About Me</h1>
-                  <p>My Name is <b>Tesfalegn Petros.</b> 
-                   I am a full stack developer
-                   and developing responsive 
-                   and adaptive design. <br> 
-                   I am goal driver, 
-                  have good problem solving, 
-                  verbal communcation 
-                  and interperson skills.
-                  </p>
+                <h1>Personal details</h1>
+                <table class="Personal">
+                  <tr><td>Name</td> <td>Tesfalegn Petros</td></tr>
+                  <tr><td>Sex</td> <td>Male</td></tr>
+                  <tr><td>Date of Birth</td> <td>21, Dec, 2021 G.C  </td></tr>
+                  <tr><td>Place of Birth</td> <td>Wolaytta</td></tr>
+                  <tr><td>Current Location</td><td>Addis Abeba</td></tr>
+                  <tr><td>Marital States</td> <td>Single</td></tr>
+                  <tr><td>Nationality</td> <td>Ethiopian</td></tr>
+                  <tr><td>Health Condition</td> <td>Normal</td></tr>
+                </table>
               </div>
-          <div class="col-sm-3"> 
+          <div class="col-sm-3 skill"> 
             <h1>Skills</h1>
             <h4>Programming Languages</h4>
             <h5>Javascript, Java,</h5>
@@ -73,15 +99,15 @@
       </div> <br> 
       <div class="container-fluid bg-3 text-center">    
         <div class="row">
-            <div class="col-sm-3"> 
+            <div class="col-sm-3 hobb" > 
                 <h1>Hobbies Time</h1>
-                <h5>-community involvement,</h5>
-                <h5>-writing,</h5>
-                <h5>-blogging,</h5>
-                <h5>-learning languages,</h5>
-                <h5>-photography, </h5>
-                <h5>-traveling,</h5> <h5>-doing sports,</h5>
-                     <h5>-reading, and</h5>  <h5>-art.</h5>
+                <h5>-Helping Peoples,</h5> 
+                <h5>-Writing,</h5> 
+                <h5>-Blogging,</h5>
+                <h5>-Learning languages,</h5>
+                <h5>-Photography, </h5>
+                 <h5>-Doing sports,</h5>
+                     <h5>-Reading Book</h5>
               </div>
               <div class="col-sm-3"> 
                 <h1>Languages</h1>
@@ -97,10 +123,33 @@
                 <h5>-Facebook:- <a href="https://www.facebook.com/tesfalegn.petrosson">click</a></h5> 
                 <h5>Location:- Addis Abeba</h5>            
               </div>
-
-
+              <div class="col-sm-3"> 
+                <h1>Document</h1>
+                <h5>Grade 8th document <a href="#8">Show</a></h5> 
+                <h5>Grade 10th document <a href="#10">Show</a></h5> 
+                <h5>Grade 12th document <a href="#12">Show</a></h5> 
+                <h5>Grade 9th and 10th transcript <a href="#9">Show</a></h5> 
+                <h5>Grade 11th and 12th transcript<a href="#11">Show</a></h5> 
+                <h3>Extra Document</h3>
+                <h5>CyberOps Associate <a href="#ops">Show</a></h5> 
+                <h5>Cybersecurity Essentials <a href="#ens">Show</a></h5> 
+              </div>
             </div>
         </div>
-              
+<hr>
+        <!-- Gallery -->
+        <div class="container-fluid bg-3 text-center">    
+          <div class="row mobile"> 
+            <table>
+              <tr><td><h4>Grade 8th Document</h4> <img src="./image/duc/8.jpg" alt=""> </td></tr>
+            <tr><td> <h4>Grade 10th Document</h4> <img src="./image/duc/10.jpg" id="10" alt=""></td></tr>
+            <tr><td> <h4>Grade 12th Document</h4><img src="./image/duc/12.jpg" id="12" alt=""></td></tr>
+            <tr><td> <h4>Grade 9th and 10th Transcript</h4><img src="./image/duc/9.jpg" id="9" alt=""></td></tr>
+            <tr><td> <h4>Grade 11th and 112th Transcript</h4><img src="./image/duc/11.jpg" id="11" alt=""></td></tr>
+            <tr><td> <h4>CyberOps Associate</h4><img src="./image/duc/cyberops.jpg" id="ops" alt=""></td></tr>
+            <tr><td> <h4>Cybersecurity Essentials</h4><img src="./image/duc/cyber_ens.jpg" id="ens" alt=""></td></tr>
+          </table>
+          </div>
+        </div> 
 </body>
 </html>
